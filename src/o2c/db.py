@@ -122,5 +122,39 @@ def get_engine(db_url: str | None = None) -> Engine:
     return create_engine(url)
 
 
+# Document flow: one row per order item and each delivery and invoice that follows it.
+# Like transaction VA03 > Document Flow, but as a flat table.
+# LEFT JOIN keeps order items that have no delivery or no invoice yet.
+DOCUMENT_FLOW_VIEW = """
+CREATE VIEW IF NOT EXISTS document_flow AS
+SELECT
+    so.id               AS order_id,
+    so.customer_id      AS customer_id,
+    soi.item_no         AS order_item_no,
+    soi.material        AS material,
+    soi.net_amount      AS item_net_amount,
+    di.delivery_id      AS delivery_id,
+    od.goods_issue_status AS goods_issue_status,
+    od.goods_issue_date AS goods_issue_date,
+    od.billing_status   AS delivery_billing_status,
+    bi.billing_id       AS billing_id,
+    bd.doc_type         AS billing_type,
+    bd.billing_date     AS billing_date,
+    bd.is_cancelled     AS billing_cancelled
+FROM sales_order so
+JOIN sales_order_item soi ON soi.order_id = so.id
+LEFT JOIN delivery_item di
+    ON di.order_id = soi.order_id AND di.order_item_no = soi.item_no
+LEFT JOIN outbound_delivery od ON od.id = di.delivery_id
+LEFT JOIN billing_item bi
+    ON bi.order_id = soi.order_id AND bi.order_item_no = soi.item_no
+    -- delivery related billing must match the delivery, order related has none
+    AND (di.delivery_id IS NULL OR bi.delivery_id = di.delivery_id)
+LEFT JOIN billing_document bd ON bd.id = bi.billing_id
+"""
+
+
 def create_tables(engine: Engine) -> None:
     Base.metadata.create_all(engine)
+    with engine.begin() as conn:
+        conn.exec_driver_sql(DOCUMENT_FLOW_VIEW)

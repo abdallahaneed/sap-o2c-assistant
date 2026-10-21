@@ -5,6 +5,7 @@ Order 2 is open, its delivery has no goods issue yet.
 """
 
 D = "/Date(1471392000000)/"  # 2016-08-17
+D2 = "/Date(1474156800000)/"  # 2016-09-18
 
 RAW = {
     "sales_order": [
@@ -58,10 +59,25 @@ RAW = {
         {"BillingDocument": "90000000", "BillingDocumentType": "F2", "SoldToParty": "17100001",
          "BillingDocumentDate": D, "TotalNetAmount": "52.65", "TransactionCurrency": "USD",
          "BillingDocumentIsCancelled": False, "AccountingPostingStatus": "C"},
+        # Credit memo in September: reduces revenue
+        {"BillingDocument": "90000001", "BillingDocumentType": "G2", "SoldToParty": "17100001",
+         "BillingDocumentDate": D2, "TotalNetAmount": "10.00", "TransactionCurrency": "USD",
+         "BillingDocumentIsCancelled": False, "AccountingPostingStatus": "C"},
+        # Down payment request: no revenue
+        {"BillingDocument": "90000002", "BillingDocumentType": "FAZ", "SoldToParty": "17100001",
+         "BillingDocumentDate": D, "TotalNetAmount": "100.00", "TransactionCurrency": "USD",
+         "BillingDocumentIsCancelled": False, "AccountingPostingStatus": "C"},
+        # Cancelled invoice for order 3: no revenue, order 3 stays not billed
+        {"BillingDocument": "90000003", "BillingDocumentType": "F2", "SoldToParty": "17100002",
+         "BillingDocumentDate": D, "TotalNetAmount": "52.65", "TransactionCurrency": "USD",
+         "BillingDocumentIsCancelled": True, "AccountingPostingStatus": "C"},
     ],
     "billing_item": [
         {"BillingDocument": "90000000", "BillingDocumentItem": "10", "SalesDocument": "1",
          "SalesDocumentItem": "10", "ReferenceSDDocument": "80000000", "Material": "TG11",
+         "NetAmount": "52.65"},
+        {"BillingDocument": "90000003", "BillingDocumentItem": "10", "SalesDocument": "3",
+         "SalesDocumentItem": "10", "ReferenceSDDocument": "80000001", "Material": "TG11",
          "NetAmount": "52.65"},
     ],
     "business_partner": [

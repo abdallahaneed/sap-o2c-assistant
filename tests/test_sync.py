@@ -40,7 +40,7 @@ def test_mock_mode_loads_all_tables(engine, fixture_dir):
     assert counts["sales_order"] == 3
     assert counts["sales_order_item"] == 3  # orphan for order 999 dropped
     assert count(engine, db.OutboundDeliveryRow) == 3
-    assert count(engine, db.BillingItemRow) == 1
+    assert count(engine, db.BillingItemRow) == 2
     assert count(engine, db.BusinessPartnerRow) == 2
 
 
