@@ -124,3 +124,28 @@ def test_status_c_counts_as_billed_without_loaded_invoice():
 def test_order_without_items_still_counts_as_ordered(engine):
     # Funnel 'ordered' comes from sales_order, not from items
     assert queries.o2c_funnel(engine)["ordered"] == 3
+
+
+def test_note_says_invoice_exists_but_is_not_loaded(engine, monkeypatch):
+    flow = [
+        {
+            "order_item_no": 10,
+            "delivery_id": "80000029",
+            "goods_issue_status": "C",
+            "goods_issue_date": "2016-09-14",
+            "delivery_billing_status": "C",
+            "billing_id": None,
+            "billing_type": None,
+            "billing_date": None,
+            "billing_cancelled": None,
+        }
+    ]
+    real_rows = queries._rows
+
+    def fake_rows(engine_, sql, **params):
+        return flow if "FROM document_flow" in sql else real_rows(engine_, sql, **params)
+
+    monkeypatch.setattr(queries, "_rows", fake_rows)
+    order = queries.get_order_details(engine, "1")
+    assert order["o2c_step"] == "billed"
+    assert "invoice exists in SAP" in order["note"]

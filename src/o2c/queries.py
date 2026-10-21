@@ -155,7 +155,8 @@ def get_order_details(engine: Engine, order_id: str) -> dict[str, Any] | None:
         item["net_amount"] = _money(item["net_amount"])
     order["document_flow"] = _rows(
         engine,
-        """SELECT order_item_no, delivery_id, goods_issue_status, goods_issue_date,
+        # DISTINCT: two delivery items (e.g. a batch split) can point to one order item
+        """SELECT DISTINCT order_item_no, delivery_id, goods_issue_status, goods_issue_date,
                   delivery_billing_status, billing_id, billing_type, billing_date,
                   billing_cancelled
            FROM document_flow WHERE order_id = :order_id
@@ -169,7 +170,9 @@ def get_order_details(engine: Engine, order_id: str) -> dict[str, Any] | None:
     ):
         # Tell the assistant openly, so it does not invent an invoice number
         order["note"] = (
-            "SAP marks the delivery as billed, but the invoice is not in the loaded data."
+            "An invoice exists in SAP: the delivery billing status is C (completely billed). "
+            "The invoice is outside the loaded data (1000 rows per table), so its number "
+            "is unknown here. Do not say that no invoice was created."
         )
     return order
 
