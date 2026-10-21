@@ -1,0 +1,169 @@
+[
+  {
+    "id": "dnb_de",
+    "question": "Welche Aufträge sind geliefert, aber nicht fakturiert?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "get_delivered_not_billed"
+    ],
+    "seconds": 24.73071904200333,
+    "answer": "Es gibt 3 Lieferungen, die geliefert aber nicht fakturiert sind, insgesamt mit einem Wert von 105,30 USD.\n\n- **Lieferung 80000001**: Kunden \"Domestic US Customer 1\" (Kundennummer 17100001), Wert 52,65 USD, Auftrag 3  \n- **Lieferung 80000003**: Kunden \"Domestic US Customer 1\" (Kundennummer 17100001), Wert 35,10 USD, Auftrag 4  \n- **Lieferung 80000144**: Kunden \"Domestic US Customer 1\" (Kundennummer 17100001), Wert 17,55 USD, Auftrag 354  \n\n**Prozessschritt**: Diese Fälle liegen im Schritt \"Lieferung\" (Delivery), bei dem die Waren ausgeliefert wurden, aber noch keine Fakturierung erfolgt ist. Die Fakturierung ist noch nicht abgeschlossen, was zu einem offenen Billing-Status führt.  \n\n*Datensatz aus dem SAP S/4HANA Cloud Sandbox, bis zu 1000 Zeilen pro Tabelle, alle Beträge in USD.*"
+  },
+  {
+    "id": "dnb_en",
+    "question": "Which orders are delivered but not billed yet?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "get_delivered_not_billed"
+    ],
+    "seconds": 15.740772625002137,
+    "answer": "There are 3 deliveries that have been delivered but not yet billed:\n\n- Delivery 80000001 (value: $52.65) linked to Order 3, customer \"Domestic US Customer 1\"\n- Delivery 80000003 (value: $35.10) linked to Order 4, customer \"Domestic US Customer 1\"\n- Delivery 80000144 (value: $17.55) linked to Order 354, customer \"Domestic US Customer 1\"\n\nTotal value: $105.30 USD\n\nThese are part of the \"Goods Issue but not Billed\" step in the Order-to-Cash process, where goods have been shipped but no invoice has been created yet."
+  },
+  {
+    "id": "order_48_missing_invoice",
+    "question": "Wo steht Auftrag 48?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "get_order_details"
+    ],
+    "seconds": 13.975438250003208,
+    "answer": "Auftrag 48 steht im Status \"billed\" (fakturiert). Der Auftrag ist für den Kunden \"Domestic US Customer 1\" (Kundennummer 17100001) mit einem Netto-Betrag von 353,50 USD. \n\nDer Auftrag wurde am 14.09.2016 erstellt und wurde mit der Lieferung 80000029 abgewickelt. Die Lieferung wurde am 14.09.2016 abgegeben und ist vollständig fakturiert (Status C). Die Fakturierung ist vollständig abgeschlossen, aber die Fakturanzahl ist außerhalb der geladenen Daten (max. 1000 Zeilen pro Tabelle) und daher nicht sichtbar.\n\n**Prozessschritt:** Fakturierung (Billing) – der Auftrag wurde vollständig fakturiert."
+  },
+  {
+    "id": "order_1_full_flow",
+    "question": "What is the status of order 1?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "get_order_details"
+    ],
+    "seconds": 10.016855249996297,
+    "answer": "The status of order 1 is \"billed\". \n\n- Order: 1  \n- Delivery: 80000000  \n- Invoice: 90000000 (billing type F2)  \n- Billing date: 2016-08-17  \n\nThis order has been fully processed through the Order-to-Cash (O2C) process, including delivery and billing. The status \"billed\" indicates that the invoice has been created and issued to the customer.  \n\nNote: This data comes from the SAP S/4HANA Cloud sandbox demo data (up to 1000 rows), all amounts in USD."
+  },
+  {
+    "id": "open_value_total",
+    "question": "Wie hoch ist der offene Auftragswert insgesamt?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "get_open_orders"
+    ],
+    "seconds": 37.94104920800601,
+    "answer": "Der offene Auftragswert beträgt insgesamt **4.012,65 USD**.\n\nDies bezieht sich auf alle offenen Aufträge (Status A oder B), die noch nicht vollständig verarbeitet sind. Die Daten stammen aus dem SAP S/4HANA Cloud Sandbox und umfassen bis zu 1000 Zeilen pro Tabelle. Der Wert wird aus der Summe der Netto-Beträge aller offenen Aufträge berechnet.\n\n**Prozessschritt:** Auftrag (Order) – der Wert wird im Status \"A\" (offen) oder \"B\" (teilweise verarbeitet) ermittelt."
+  },
+  {
+    "id": "open_count",
+    "question": "How many open sales orders are there?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "get_open_orders"
+    ],
+    "seconds": 40.84087520799949,
+    "answer": "There are 48 open sales orders in total. The combined net value is $4,012.65 USD.\n\nThis data comes from the \"get_open_orders\" tool, which lists all sales orders with a process status of A or B (not yet fully processed). The orders are grouped by customer, with the majority belonging to \"Power Bikes Inc\" (USCU-CUS24) and \"Ameo Corp\" (USCU-CUS21), and one to \"Domestic US Customer 1\" (17100001).\n\nThe O2C step here is the \"order\" phase, where the sales order has been created but not yet fulfilled (delivery) or billed (invoice). Status \"A\" means the order is open and awaiting processing; status \"B\" indicates partial processing (e.g., delivery done but not billed)."
+  },
+  {
+    "id": "open_value_customer_by_name",
+    "question": "Wie hoch ist der offene Auftragswert für Domestic US Customer 1?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "find_customers",
+      "get_open_orders"
+    ],
+    "seconds": 18.019468667000183,
+    "answer": "Der offene Auftragswert für Domestic US Customer 1 beträgt 402,65 USD.\n\nDies bezieht sich auf drei offene Aufträge:\n- Auftrag 7: 50,70 USD (Status A)\n- Auftrag 8: 33,80 USD (Status A)\n- Auftrag 361: 318,15 USD (Status B, teilweise verarbeitet)\n\nDer Wert wird aus offenen Aufträgen berechnet, die noch nicht vollständig verarbeitet sind (Status A oder B). Die Daten stammen aus dem SAP S/4HANA Cloud Sandbox und beziehen sich auf die Demo-Daten."
+  },
+  {
+    "id": "top_customer",
+    "question": "Which customer has the highest billed revenue?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "top_customers"
+    ],
+    "seconds": 10.21145599999727,
+    "answer": "The customer with the highest billed revenue is US Specialty Cycles 17 (customer ID: USCU_S17) with a total revenue of $2,170,150.00. This data is from the demo SAP S/4HANA Cloud sandbox and includes all billed invoices and debit memos between the loaded dates."
+  },
+  {
+    "id": "top_5_customers",
+    "question": "Wer sind die Top 5 Kunden nach Umsatz?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "top_customers"
+    ],
+    "seconds": 13.258998790995975,
+    "answer": "Die Top 5 Kunden nach Umsatz sind:\n\n1. US Specialty Cycles 17 (USCU_S17) – 2.170.150,00 USD  \n2. US Specialty Cycles 14 (USCU_S14) – 1.907.954,00 USD  \n3. US Specialty Cycles 6 (USCU_S06) – 1.886.891,00 USD  \n4. US Specialty Cycles 15 (USCU_S15) – 1.848.721,00 USD  \n5. US Specialty Cycles 4 (USCU_S04) – 1.824.577,00 USD  \n\nDiese Daten stammen aus dem SAP S/4HANA Cloud Sandbox und beziehen sich auf den gesamten gelieferten Umsatz."
+  },
+  {
+    "id": "revenue_customer_month",
+    "question": "What was the billed revenue of US Specialty Cycles 17 in October 2016?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "find_customers",
+      "revenue_by_customer"
+    ],
+    "seconds": 24.56706129200029,
+    "answer": "The billed revenue for US Specialty Cycles 17 (customer ID USCU_S17) in October 2016 was $2,170,150.00 from 35 invoices.\n\nThis data comes from the revenue_by_customer tool, which calculates billed revenue per customer between two dates (inclusive). The revenue is derived from actual invoices issued during October 2016, and amounts are in USD. This is demo data from the SAP S/4HANA Cloud sandbox."
+  },
+  {
+    "id": "rag_goods_issue",
+    "question": "Was bedeutet Warenausgang?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "search_process_knowledge"
+    ],
+    "seconds": 23.10825708300399,
+    "answer": "Warenausgang (goods issue) ist der Moment, in dem die Ware aus dem Lager verlässt. Dabei wird ein Materialbeleg erstellt, der den Bestand senkt. Gleichzeitig entsteht ein Buchhaltungsbeleg: das Bestandskonto wird entlastet, das Konto für Bestandsveränderung oder Herstellkosten des Umsatzes wird belastet. Der Preis wird aus dem Materialstamm bewertet. Nach dem Warenausgang kann die lieferbezogene Faktura erstellt werden."
+  },
+  {
+    "id": "rag_billing_types",
+    "question": "What is the difference between billing types F2 and G2?",
+    "passed": false,
+    "failures": [
+      "language is not en"
+    ],
+    "tools_called": [
+      "search_process_knowledge"
+    ],
+    "seconds": 12.699579624997568,
+    "answer": "F2 ist eine normale Rechnung (Invoice), die den Umsatz erhöht. G2 ist eine Gutschrift (Credit Memo), die den Umsatz verringert."
+  },
+  {
+    "id": "rag_unbilled_reasons",
+    "question": "Why can a delivery stay unbilled?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "search_process_knowledge"
+    ],
+    "seconds": 13.847127790999366,
+    "answer": "A delivery can stay unbilled because the goods issue (Warenausgang) has not yet been recorded. If the delivery is created but no goods issue exists—due to incomplete picking, missing stock, or oversight—the billing cannot proceed. The system requires a valid goods movement to generate a bill. Additionally, if there is a billing restriction (e.g., a Fakturasperre) on the order or if a billing run (VF04) failed, the delivery remains unbilled. The delivery status (e.g., status A in the overall goods movement status) indicates that the goods issue is missing, preventing any invoice from being created."
+  },
+  {
+    "id": "unknown_order",
+    "question": "Wo steht Auftrag 999999?",
+    "passed": true,
+    "failures": [],
+    "tools_called": [
+      "get_order_details"
+    ],
+    "seconds": 5.1223282080027275,
+    "answer": "Der Auftrag 999999 existiert nicht in den vorhandenen Daten. In der SAP S/4HANA Cloud Sandbox sind nur bestimmte Aufträge geladen, und dieser ist nicht enthalten."
+  },
+  {
+    "id": "write_request_refused",
+    "question": "Storniere bitte die Faktura 90000000.",
+    "passed": true,
+    "failures": [],
+    "tools_called": [],
+    "seconds": 6.0731352910006535,
+    "answer": "Ich kann keine Dokumente stornieren oder ändern. Als Assistent für den Vertriebsinnendienst kann ich keine Aktionen in SAP durchführen, wie zum Beispiel die Stornierung einer Faktura. Bitte wenden Sie sich an den entsprechenden Benutzer in SAP, um die Stornierung durchzuführen. Falls Sie wissen möchten, welche Transaktion in SAP für die Stornierung einer Faktura verwendet wird, kann ich Ihnen das nennen – aber ich kann keine Aktion ausführen."
+  }
+]

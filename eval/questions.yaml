@@ -1,0 +1,104 @@
+# Evaluation set: 15 questions with expected facts from the loaded SAP sandbox data.
+# Expected values were computed with SQL directly on data/o2c.db, not by the assistant.
+#
+# Checks per question (all must pass):
+#   lang         answer language must match (de or en)
+#   tools        every listed tool must have been called
+#   contains     every text must appear in the answer (case does not matter)
+#   contains_any at least one of these texts must appear
+#   numbers      every number must appear; 4.012,65 and 4,012.65 and 4012.65 all count
+#   not_contains none of these texts may appear (catches invented or wrong claims)
+
+- id: dnb_de
+  question: Welche Aufträge sind geliefert, aber nicht fakturiert?
+  lang: de
+  tools: [get_delivered_not_billed]
+  contains: ["80000001", "80000003", "80000144"]
+
+- id: dnb_en
+  question: Which orders are delivered but not billed yet?
+  lang: en
+  tools: [get_delivered_not_billed]
+  contains: ["80000001", "80000003", "80000144"]
+
+- id: order_48_missing_invoice
+  question: Wo steht Auftrag 48?
+  lang: de
+  tools: [get_order_details]
+  contains: ["80000029"]
+  not_contains: ["keine Faktura wurde erstellt", "keine Rechnung wurde erstellt"]
+
+- id: order_1_full_flow
+  question: What is the status of order 1?
+  lang: en
+  tools: [get_order_details]
+  contains: ["80000000", "90000000"]
+
+- id: open_value_total
+  question: Wie hoch ist der offene Auftragswert insgesamt?
+  lang: de
+  tools: [get_open_orders]
+  numbers: ["4012.65"]
+
+- id: open_count
+  question: How many open sales orders are there?
+  lang: en
+  tools: [get_open_orders]
+  numbers: ["48"]
+
+- id: open_value_customer_by_name
+  question: Wie hoch ist der offene Auftragswert für Domestic US Customer 1?
+  lang: de
+  # Checks the result, not the path: filtering the open order list by name is also correct.
+  # (First run required find_customers and failed although the answer was right.)
+  tools: [get_open_orders]
+  numbers: ["402.65"]
+
+- id: top_customer
+  question: Which customer has the highest billed revenue?
+  lang: en
+  contains_any: ["US Specialty Cycles 17", "USCU_S17"]
+
+- id: top_5_customers
+  question: Wer sind die Top 5 Kunden nach Umsatz?
+  lang: de
+  tools: [top_customers]
+  contains: ["Cycles 17", "Cycles 14", "Cycles 6", "Cycles 15", "Cycles 4"]
+
+- id: revenue_customer_month
+  question: What was the billed revenue of US Specialty Cycles 17 in October 2016?
+  lang: en
+  tools: [revenue_by_customer]
+  numbers: ["2170150"]
+
+- id: rag_goods_issue
+  question: Was bedeutet Warenausgang?
+  lang: de
+  tools: [search_process_knowledge]
+  contains_any: ["Bestand", "Lager"]
+
+- id: rag_billing_types
+  question: What is the difference between billing types F2 and G2?
+  lang: en
+  tools: [search_process_knowledge]
+  contains_any: ["credit memo", "Gutschrift"]
+
+- id: rag_unbilled_reasons
+  question: Why can a delivery stay unbilled?
+  lang: en
+  tools: [search_process_knowledge]
+  contains_any: ["billing block", "Fakturasperre", "VF04", "billing due list", "billing run"]
+
+- id: unknown_order
+  question: Wo steht Auftrag 999999?
+  lang: de
+  tools: [get_order_details]
+  contains_any: ["nicht gefunden", "existiert nicht", "nicht vorhanden", "keine Daten",
+                 "kein Auftrag", "nicht in den", "unbekannt", "keine Informationen"]
+  not_contains: ["80000"]
+
+- id: write_request_refused
+  question: Storniere bitte die Faktura 90000000.
+  lang: de
+  contains_any: ["VF11", "nur lesend", "nur Lesezugriff", "keine Änderungen", "kann keine",
+                 "kann ich nicht", "nicht möglich", "nicht stornieren"]

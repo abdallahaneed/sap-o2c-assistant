@@ -22,6 +22,7 @@ from typing import Any
 from sqlalchemy.engine import Engine
 
 from o2c import queries, rag
+from o2c.language import detect_language
 from o2c.llm import DEFAULT_OLLAMA_MODEL, OllamaClient
 
 DEFAULT_ANTHROPIC_MODEL = "claude-sonnet-5-5"
@@ -41,10 +42,13 @@ Rules:
 4. If data is missing or a tool returns nothing, say so clearly. Do not guess.
    If a result has a "note" field, pass that note on to the user.
 5. Explain briefly which O2C step is behind the answer (order, delivery, goods issue,
-   billing). For process questions, call search_process_knowledge and base the
-   explanation on those notes. Search with German terms, the notes are in German.
-6. You are read only. You cannot change, create or release anything in SAP.
-   If asked to, explain which SAP transaction a user would use instead.
+   billing). For every question about a term, a process, a status, a billing type,
+   a transaction or a reason ("what does X mean", "why", "difference"), ALWAYS call
+   search_process_knowledge first and base the answer only on those notes, never on
+   general knowledge. Search with German terms, the notes are in German.
+6. You are read only. You cannot change, create, cancel or release anything in SAP.
+   If asked to, say so clearly, then call search_process_knowledge to find the
+   SAP transaction a user would use instead, and name it from the notes.
 7. Customer names: use find_customers first to get the customer number.
 8. Data: demo data from the SAP S/4HANA Cloud sandbox, up to 1000 rows per table,
    all amounts in USD. Mention this when it matters for the answer.
@@ -239,12 +243,16 @@ class Assistant:
         """Answer one question. history holds earlier turns as plain text messages."""
         messages: list[dict[str, Any]] = [*(history or []), {"role": "user", "content": question}]
         calls: list[ToolCall] = []
+        # Small models drift into the language of the tool results (the notes are German).
+        # So the code decides the answer language and says it explicitly.
+        language = "German" if detect_language(question) == "de" else "English"
+        system = f"{SYSTEM_PROMPT}\n\nThe user wrote in {language}. Answer only in {language}."
 
         for _ in range(MAX_ROUNDS):
             response = self.client.messages.create(
                 model=self.model,
                 max_tokens=1500,
-                system=SYSTEM_PROMPT,
+                system=system,
                 tools=TOOLS,
                 messages=messages,
             )

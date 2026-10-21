@@ -1,0 +1,13 @@
+# Keep secrets, local data and caches out of the image
+.env
+.git
+.venv
+__pycache__
+.pytest_cache
+.ruff_cache
+data/o2c.db
+data/chroma
+data/fixtures/explore
+data/metadata
+eval/results.*
+docs

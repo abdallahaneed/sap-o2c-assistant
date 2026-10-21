@@ -129,3 +129,11 @@ def test_history_is_sent_before_question(engine):
     history = [{"role": "user", "content": "A"}, {"role": "assistant", "content": "B"}]
     assistant.chat("C", history)
     assert [m["content"] for m in fake.requests[0]["messages"]] == ["A", "B", "C"]
+
+
+def test_answer_language_is_set_from_the_question(engine):
+    assistant, fake = make(engine, response(text("ok")), response(text("ok")))
+    assistant.chat("What is the difference between F2 and G2?")
+    assistant.chat("Storniere bitte die Faktura 90000000.")
+    assert fake.requests[0]["system"].endswith("Answer only in English.")
+    assert fake.requests[1]["system"].endswith("Answer only in German.")
