@@ -1,0 +1,9 @@
+# Streamlit settings for this project
+[browser]
+gatherUsageStats = false  # no usage statistics, also no email prompt in Docker
+
+[client]
+toolbarMode = "viewer"  # hides the Deploy button and developer menu
+
+[theme]
+primaryColor = "#2a78d6"  # same blue as the charts
