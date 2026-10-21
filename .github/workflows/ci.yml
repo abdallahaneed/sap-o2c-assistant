@@ -30,3 +30,28 @@ jobs:
 
       - name: Tests
         run: uv run pytest -q
+
+  # Proves the definition of done: docker compose up starts the app in mock mode, no keys.
+  docker:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and start in mock mode
+        run: docker compose up --build -d --wait
+
+      - name: Check API and dashboard
+        run: |
+          curl -fsS http://localhost:8000/health
+          curl -fsS http://localhost:8000/kpis | python3 -c "import json, sys; d = json.load(sys.stdin); assert d['open_orders']['count'] == 48, d; print('KPIs ok:', d['open_orders'])"
+          for i in $(seq 1 30); do curl -fsS http://localhost:8501/_stcore/health && break; sleep 2; done
+          curl -fsS http://localhost:8501/_stcore/health
+
+      - name: Show logs on failure
+        if: failure()
+        run: docker compose logs
+
+      - name: Stop
+        if: always()
+        run: docker compose down
