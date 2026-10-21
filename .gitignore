@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Local data that is rebuilt from fixtures
+*.db
+data/chroma/
+
+# macOS
+.DS_Store
