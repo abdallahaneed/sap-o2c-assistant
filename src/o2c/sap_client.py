@@ -82,6 +82,8 @@ class SapClient:
         entity: str,
         select: list[str] | None = None,
         expand: list[str] | None = None,
+        filter: str | None = None,
+        orderby: str | None = None,
         top: int = 50,
         skip: int = 0,
     ) -> list[dict[str, Any]]:
@@ -91,6 +93,10 @@ class SapClient:
             params["$select"] = ",".join(select)
         if expand:
             params["$expand"] = ",".join(expand)
+        if filter:
+            params["$filter"] = filter
+        if orderby:
+            params["$orderby"] = orderby
         response = self._request(f"{self.base_url}/{service}/{entity}", params)
         return response.json()["d"]["results"]
 
@@ -100,13 +106,20 @@ class SapClient:
         entity: str,
         select: list[str] | None = None,
         expand: list[str] | None = None,
-        page_size: int = 50,
-        max_rows: int = 500,
+        filter: str | None = None,
+        orderby: str | None = None,
+        page_size: int = 100,
+        max_rows: int = 1000,
     ) -> list[dict[str, Any]]:
-        """Page through an entity set with $top and $skip until a short page comes back."""
+        """Page through an entity set with $top and $skip until a short page comes back.
+
+        Pass orderby so pages do not overlap or skip rows between calls.
+        """
         rows: list[dict[str, Any]] = []
         while len(rows) < max_rows:
-            page = self.get_page(service, entity, select, expand, top=page_size, skip=len(rows))
+            page = self.get_page(
+                service, entity, select, expand, filter, orderby, top=page_size, skip=len(rows)
+            )
             rows.extend(page)
             if len(page) < page_size:
                 break  # last page reached

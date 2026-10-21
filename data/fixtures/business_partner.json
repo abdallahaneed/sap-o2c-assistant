@@ -1,0 +1,926 @@
+[
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('17100001')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('17100001')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "17100001",
+    "BusinessPartnerFullName": "Domestic US Customer 1",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='17100001',AddressID='22899')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='17100001',AddressID='22899')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Atlanta",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('17100003')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('17100003')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "17100003",
+    "BusinessPartnerFullName": "Drivestar Inc",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='17100003',AddressID='22933')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='17100003',AddressID='22933')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Houma",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CU04')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CU04')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CU04",
+    "BusinessPartnerFullName": "Unbeatable Sport Corp.",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CU04',AddressID='23538')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CU04',AddressID='23538')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Baltimore",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS01')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS01')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS01",
+    "BusinessPartnerFullName": "World of Sports Inc.",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS01',AddressID='23519')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS01',AddressID='23519')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "New York",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS02')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS02')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS02",
+    "BusinessPartnerFullName": "Roadkings Sports Inc.",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS02',AddressID='23533')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS02',AddressID='23533')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Columbus",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS03')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS03')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS03",
+    "BusinessPartnerFullName": "Miller & Son Corp",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS03',AddressID='23536')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS03',AddressID='23536')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Wilmington",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS04')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS04')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS04",
+    "BusinessPartnerFullName": "Unbeatable Sports",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS04',AddressID='23673')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS04',AddressID='23673')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Seattle",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS05')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS05')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS05",
+    "BusinessPartnerFullName": "Spirit2Ride Inc.",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS05',AddressID='23540')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS05',AddressID='23540')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Seattle",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS06')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS06')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS06",
+    "BusinessPartnerFullName": "FiveStarSport Inc.",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS06',AddressID='23542')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS06',AddressID='23542')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Houma",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS07')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS07')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS07",
+    "BusinessPartnerFullName": "Fast Sports Inc.",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS07',AddressID='23544')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS07',AddressID='23544')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Palo Alto",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS08')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS08')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS08",
+    "BusinessPartnerFullName": "High Ride Inc.",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS08',AddressID='23546')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS08',AddressID='23546')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "WICHITA",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS09')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS09')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS09",
+    "BusinessPartnerFullName": "HT Bikes",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS09',AddressID='23782')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS09',AddressID='23782')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Palo Alto",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS21')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS21')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS21",
+    "BusinessPartnerFullName": "Ameo Corp",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS21',AddressID='23713')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS21',AddressID='23713')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "New York",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS22')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS22')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS22",
+    "BusinessPartnerFullName": "HLL Bikes",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS22',AddressID='23714')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS22',AddressID='23714')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "New York",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS24')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU-CUS24')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU-CUS24",
+    "BusinessPartnerFullName": "Power Bikes Inc",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS24',AddressID='23774')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU-CUS24',AddressID='23774')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "New York",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L01')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L01')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L01",
+    "BusinessPartnerFullName": "US Large Cycles 1",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L01',AddressID='23949')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L01',AddressID='23949')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "New york",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L02')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L02')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L02",
+    "BusinessPartnerFullName": "US Large Cycles 2",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L02',AddressID='23950')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L02',AddressID='23950')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Wilmington",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L03')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L03')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L03",
+    "BusinessPartnerFullName": "US Large Cycles 3",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L03',AddressID='23951')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L03',AddressID='23951')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Baltimore",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L04')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L04')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L04",
+    "BusinessPartnerFullName": "US Large Cycles 4",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L04',AddressID='23952')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L04',AddressID='23952')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "RALEIGH",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L05')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L05')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L05",
+    "BusinessPartnerFullName": "US Large Cycles 5",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L05',AddressID='23953')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L05',AddressID='23953')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "CHARLESTON",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L06')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L06')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L06",
+    "BusinessPartnerFullName": "US Large Cycles 6",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L06',AddressID='23954')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L06',AddressID='23954')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "NASHVILLE",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L07')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L07')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L07",
+    "BusinessPartnerFullName": "US Large Cycles 7",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L07',AddressID='23955')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L07',AddressID='23955')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "MIAMI",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L08')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L08')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L08",
+    "BusinessPartnerFullName": "US Large Cycles 8",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L08',AddressID='23956')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L08',AddressID='23956')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "ATLANTA",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L09')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L09')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L09",
+    "BusinessPartnerFullName": "US Large Cycles 9",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L09',AddressID='23957')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L09',AddressID='23957')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "DETROIT",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L10')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_L10')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_L10",
+    "BusinessPartnerFullName": "US Large Cycles 10",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L10',AddressID='23958')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_L10',AddressID='23958')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Cleveland",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S01')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S01')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S01",
+    "BusinessPartnerFullName": "US Specialty Cycles 1",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S01',AddressID='23959')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S01',AddressID='23959')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Pittsburgh",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S02')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S02')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S02",
+    "BusinessPartnerFullName": "US Specialty Cycles 2",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S02',AddressID='23960')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S02',AddressID='23960')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Boston",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S03')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S03')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S03",
+    "BusinessPartnerFullName": "US Specialty Cycles 3",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S03',AddressID='23961')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S03',AddressID='23961')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Greensburg",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S04')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S04')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S04",
+    "BusinessPartnerFullName": "US Specialty Cycles 4",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S04',AddressID='23962')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S04',AddressID='23962')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "PORTLAND",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S05')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S05')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S05",
+    "BusinessPartnerFullName": "US Specialty Cycles 5",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S05',AddressID='23963')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S05',AddressID='23963')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "HARTFORD",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S06')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S06')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S06",
+    "BusinessPartnerFullName": "US Specialty Cycles 6",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S06',AddressID='23964')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S06',AddressID='23964')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "MANHATTAN",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S07')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S07')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S07",
+    "BusinessPartnerFullName": "US Specialty Cycles 7",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S07',AddressID='23965')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S07',AddressID='23965')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "RALEIGH",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S08')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S08')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S08",
+    "BusinessPartnerFullName": "US Specialty Cycles 8",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S08',AddressID='23966')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S08',AddressID='23966')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "CHARLESTON",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S09')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S09')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S09",
+    "BusinessPartnerFullName": "US Specialty Cycles 9",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S09',AddressID='23967')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S09',AddressID='23967')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "NASHVILLE",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S10')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S10')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S10",
+    "BusinessPartnerFullName": "US Specialty Cycles 10",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S10',AddressID='23968')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S10',AddressID='23968')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "MIAMI",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S11')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S11')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S11",
+    "BusinessPartnerFullName": "US Specialty Cycles 11",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S11',AddressID='23969')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S11',AddressID='23969')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "ATLANTA",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S12')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S12')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S12",
+    "BusinessPartnerFullName": "US Specialty Cycles 12",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S12',AddressID='23970')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S12',AddressID='23970')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "RICHMOND",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S13')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S13')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S13",
+    "BusinessPartnerFullName": "US Specialty Cycles 13",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S13',AddressID='23971')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S13',AddressID='23971')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "MONTGOMERY",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S14')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S14')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S14",
+    "BusinessPartnerFullName": "US Specialty Cycles 14",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S14',AddressID='23972')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S14',AddressID='23972')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "CHICAGO",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S15')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S15')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S15",
+    "BusinessPartnerFullName": "US Specialty Cycles 15",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S15',AddressID='23973')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S15',AddressID='23973')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "DES MOINES",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S16')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S16')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S16",
+    "BusinessPartnerFullName": "US Specialty Cycles 16",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S16',AddressID='23974')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S16',AddressID='23974')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Milwaukee",
+          "Country": "US"
+        }
+      ]
+    }
+  },
+  {
+    "__metadata": {
+      "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S17')",
+      "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('USCU_S17')",
+      "type": "API_BUSINESS_PARTNER.A_BusinessPartnerType"
+    },
+    "Customer": "USCU_S17",
+    "BusinessPartnerFullName": "US Specialty Cycles 17",
+    "to_BusinessPartnerAddress": {
+      "results": [
+        {
+          "__metadata": {
+            "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S17',AddressID='23975')",
+            "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='USCU_S17',AddressID='23975')",
+            "type": "API_BUSINESS_PARTNER.A_BusinessPartnerAddressType"
+          },
+          "CityName": "Minneapolis",
+          "Country": "US"
+        }
+      ]
+    }
+  }
+]
